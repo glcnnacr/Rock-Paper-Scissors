@@ -1,0 +1,116 @@
+/* Genel stil */
+
+
+body {
+    font-family: "Atma", system-ui;
+    background-color: #0B192C; /* Tacivert arka plan */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    text-align: center;
+    border: 2px solid #4A4A4A;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+/* Başlık */
+h1 {
+    font-family: 'Barriecito', cursive;
+    color: #507687;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Seçimler */
+.selections {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.selection {
+    border: 2px solid #507687; /* Border rengi */
+    border-radius: 10px;
+    padding: 15px;
+    width: 45%;
+    box-shadow: 0 0 10px rgba(80, 118, 135, 0.5); /* Hafif ışık efekti */
+    text-align: center;
+}
+
+.selection p {
+    font-size: 16px;
+    color: #333333;
+    margin: 0;
+}
+
+.selection span {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #507687;
+    margin-top: 10px;
+}
+
+/* Skorlar */
+.scores {
+    display: flex;
+    justify-content:space-around;
+    margin-bottom: 20px;
+}
+
+.scores p {
+    font-size: 18px;
+    color: #333333;
+    margin: 5px 0;
+}
+
+/* Butonlar */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    font-family: 'Barriecito', cursive;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 2px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+/* Taş Butonu */
+button#rock {
+    border-color: #FEADFB;
+    color: #FEADFB;
+}
+
+/* Kağıt Butonu */
+button#paper {
+    border-color: #70E8FD;
+    color: #70E8FD;
+}
+
+/* Makas Butonu */
+button#scissors {
+    border-color: #FEF462;
+    color: #FEF462;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.6); /* Hover ışık efekti */
+}
+
+button:active {
+    transform: scale(1);
+}
