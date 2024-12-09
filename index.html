@@ -6,22 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors Game</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Barriecito&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div class="game-container">
-        <h1>Rock Paper Scissors Game</h1>
-        <div class="selection">
+        <h1>Rock Paper Scissors</h1>
+        <div class="selections">
+            <div class="selection" id="player-selection">
+                <p>Player Selection</p>
+                <span id="player-choice">-</span>
+            </div>
+            <div class="selection" id="computer-selection">
+                <p>Computer's Selection</p>
+                <span id="computer-choice">-</span>
+            </div>
+        </div>
+        <div class="scores">
+            <p>Player Score: <span id="player-score">0</span></p>
+            <p>Computer Score: <span id="computer-score">0</span></p>
+        </div>
+        <div class="buttons">
             <button id="rock">Rock</button>
             <button id="paper">Paper</button>
             <button id="scissors">Scissors</button>
         </div>
-        <div class="result">
-            <p>Your Selection: <span id="playerSelection"></span></p>
-            <p>Computer Selection: <span id="computerSelection"></span></p>
-            <p>Result: <span id="result"></span></p>
-        </div>
     </div>
+
+
 
     <script src="script.js"></script>
 </body>
